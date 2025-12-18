@@ -13,23 +13,26 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <logback.version>1.3.11</logback.version>
-        <serenity.version>4.2.22</serenity.version>
+        <serenity.version>4.2.62</serenity.version>
     </properties>
 
+    <dependencyManagement>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.9.2</version>
+            <version>6.3.0</version>
         </dependency>
 
         <!-- SERENITY (Core + JUnit 4 + Screenplay) -->
+        <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-core -->
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-core</artifactId>
             <version>${serenity.version}</version>
         </dependency>
+
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-junit</artifactId>
@@ -73,7 +76,7 @@
 
 
     </dependencies>
-
+    </dependencyManagement>
     <build>
         <plugins>
             <!-- Maven Compiler Plugin -->
