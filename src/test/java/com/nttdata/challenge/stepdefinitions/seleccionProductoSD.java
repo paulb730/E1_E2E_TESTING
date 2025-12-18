@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 public class seleccionProductoSD {
 
-    @Given("El Usuario inicia sesion")
+    @Given("El Usuario se encuentra en el inventario de productos")
     public void givenUserLogin() {
 
     }
