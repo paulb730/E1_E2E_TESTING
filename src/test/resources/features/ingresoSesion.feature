@@ -1,4 +1,4 @@
-@Loginexitoso(HappyPath)
+@login
 Feature: Iniciar sesion
 
   Scenario Outline: Ingreso de sesion exitoso

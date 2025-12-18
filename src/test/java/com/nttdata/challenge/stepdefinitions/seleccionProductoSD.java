@@ -1,4 +1,4 @@
-package com.nttdata.challenge.stepdefinitions.hooks;
+package com.nttdata.challenge.stepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
